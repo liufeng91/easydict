@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_word_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/et_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp8"
+        android:layout_toLeftOf="@+id/iv_search_word"
+        android:background="@drawable/btn_round_rect_border_normal"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/dp6"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/iv_search_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp12"
+        android:src="@drawable/ic_search_selector" />
+
+    <ImageView
+        android:id="@+id/iv_clear_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp6"
+        android:layout_toLeftOf="@id/iv_search_word"
+        android:src="@drawable/ic_fork_selector"
+        android:visibility="invisible" />
+</RelativeLayout>

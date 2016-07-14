@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_fragment_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_logout"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:background="@color/toolbar_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.veeson.easydict.view.CircleImageView
+            android:id="@+id/cv_shanbay"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_shanbay"
+            app:civ_border_color="@color/bg_white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:text="点我登录"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp12"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp6"
+            android:paddingTop="@dimen/dp6">
+
+            <TextView
+                android:id="@+id/tv_notebook"
+                style="@style/DefaultClickable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_notebook"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp12"
+                android:text="单词本"
+                android:textSize="@dimen/sp20" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/tv_record"
+                style="@style/DefaultClickable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_history_record"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp12"
+                android:text="翻译记录"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_about"
+            style="@style/DefaultClickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_about"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:text="关于软件"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout
+            android:id="@+id/ly_update"
+            style="@style/DefaultClickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_update"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout
+            android:id="@+id/ly_like"
+            style="@style/DefaultClickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_like"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:text="给个好评"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout
+            android:id="@+id/ly_share_software"
+            style="@style/DefaultClickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_share_software"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:text="分享软件"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider" />
+
+        <LinearLayout
+            android:id="@+id/ly_email"
+            style="@style/DefaultClickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp12">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/dp12"
+                android:gravity="center_vertical"
+                android:text="给作者提意见"
+                android:textSize="@dimen/sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

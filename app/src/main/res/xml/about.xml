@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/app_name">
+        <Preference
+            android:key="about_app"
+            android:summary="这是一款追求简洁、美观、实用的在线翻译软件，无广告，提供丰富的查词结果和单词例句。支持有道、百度和谷歌翻译，支持TXT文本翻译，支持单词和翻译结果的发音，支持单词收藏和翻译结果的历史记录。支持扇贝网账号授权登录，您可以将收藏的单词同步到扇贝网账号学习和查看扇贝单词例句。还有每日一句等更多实用功能等您来发现。"
+            android:title="关于应用" />
+        <Preference
+            android:key="version_update"
+            android:summary="version-1.0.2"
+            android:title="当前版本" />
+        <Preference
+            android:key="data_sources"
+            android:summary="查词API：有道翻译（官方）\n单词例句API：扇贝（官方）\n每日一句API：爱词霸（官方）\n翻译API：有道翻译（官方） 百度翻译（官方） 谷歌翻译（非官方）"
+            android:title="数据来源" />
+        <Preference
+            android:key="open libs"
+            android:summary="retrofit2、gson、butterknife、material-dialogs"
+            android:title="软件使用的开源库" />
+        <Preference
+            android:key="about_author"
+            android:summary="android开发初学者，想借此APP提升自己的项目经验，也为了方便更多使用翻译词典的人。如果您在使用的过程中有任何的意见建议，随时可以发邮件给我。如果您也是一名android开发者，欢迎一起交流学习。据说点击一下就可以给作者发邮件哦！"
+            android:title="关于作者" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_collection_items"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/DefaultClickable"
+    android:layout_marginLeft="@dimen/dp15">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_collection_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="good"
+            android:textSize="@dimen/sp16" />
+        <ImageView
+            android:id="@+id/iv_collection_horn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp12"
+            android:src="@drawable/ic_horn"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_collection_word_paraphrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:text="n. 好处；善行；慷慨的行为；adj. 好的；优良的；愉快的；虔诚的；adv. 好；n. (Good)人名；(英)古德；(瑞典)戈德"
+        android:textColor="@color/text" />
+
+</LinearLayout>

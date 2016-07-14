@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:id="@+id/tab_menus"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab_menu_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_menu_home"
+                style="@style/tab_menu_text"
+                android:drawableTop="@drawable/tab_menu_home"
+                android:text="@string/tab_menu_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_menu_translation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_menu_translation"
+                style="@style/tab_menu_text"
+                android:drawableTop="@drawable/tab_menu_translation"
+                android:text="@string/tab_menu_translation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_menu_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_menu_me"
+                style="@style/tab_menu_text"
+                android:drawableTop="@drawable/tab_menu_me"
+                android:text="@string/tab_menu_me" />
+
+            <ImageView
+                android:id="@+id/iv_menu_me_partner"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@id/tv_menu_me"
+                android:src="@mipmap/partner_red"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/tab_menus"
+        android:background="@color/div_white" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_menus"
+        android:layout_below="@id/toolbar" />
+</RelativeLayout>
+

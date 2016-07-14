@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:id="@+id/ly_logout"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:background="@color/toolbar_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.veeson.easydict.view.CircleImageView
+            android:id="@+id/cv_shanbay"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_shanbay"
+            app:civ_border_color="@color/bg_white"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/text_in_grid"
+            android:text="用户名"
+            android:textColor="#585858" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/text_in_grid" />
+
+        <TextView
+            style="@style/text_in_grid"
+            android:text="昵称"
+            android:textColor="#585858" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/text_in_grid" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bt_logout"
+        style="@style/btn_round_rect_solid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="退出登录" />
+
+</LinearLayout>
