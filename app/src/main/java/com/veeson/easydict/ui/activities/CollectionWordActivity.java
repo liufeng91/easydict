@@ -1,6 +1,5 @@
 package com.veeson.easydict.ui.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -84,10 +83,6 @@ public class CollectionWordActivity extends BaseActivity {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-//                Intent intent = new Intent(CollectionWordActivity.this, SearchWordActivity.class);
-//                intent.putExtra("collection_word_data", list.get(position));
-//                startActivity(intent);
-
                 String word = list.get(position).query;
                 if (StringUtils.isEnglish(word)) {
                     PlayAudioManager.playENPronVoice(CollectionWordActivity.this, word, "1");

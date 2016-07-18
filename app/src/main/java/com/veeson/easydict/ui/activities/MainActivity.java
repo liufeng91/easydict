@@ -3,14 +3,17 @@ package com.veeson.easydict.ui.activities;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jaeger.library.StatusBarUtil;
 import com.veeson.easydict.R;
 import com.veeson.easydict.ui.fragment.HomeFragment;
 import com.veeson.easydict.ui.fragment.MeFragment;
@@ -51,10 +54,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
+        // 设置状态栏颜色
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            StatusBarUtil.setColor(this, ContextCompat.getColor(this, R.color.toolbar_color), 0);
+        }
         mFragmentManager = getFragmentManager();
         setListener();
         tabMenuHome.performClick();
     }
+
 
     private void setListener() {
         tabMenuHome.setOnClickListener(this);

@@ -1,7 +1,9 @@
 package com.veeson.easydict.ui.activities;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
@@ -9,6 +11,7 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.jaeger.library.StatusBarUtil;
 import com.veeson.easydict.AppConstants;
 import com.veeson.easydict.R;
 import com.veeson.easydict.common.utils.NetWorkUtils;
@@ -28,15 +31,20 @@ public class LaunchActivity extends BaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
         ButterKnife.bind(this);
-        if (PreferencesUtils.getBoolean(this, AppConstants.LOGIN_SHANBAY) || PreferencesUtils.getBoolean(this, AppConstants.LOGIN_WARN)){
+        // 设置状态栏颜色
+        if (PreferencesUtils.getBoolean(this, AppConstants.LOGIN_SHANBAY) || PreferencesUtils.getBoolean(this, AppConstants.LOGIN_WARN)) {
             Intent intent = new Intent(this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             //activity切换的淡入淡出效果
 //            overridePendingTransition(0, 0);
             finish();
+        } else {
+            setListener();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                StatusBarUtil.setColor(this, ContextCompat.getColor(this, R.color.toolbar_color), 0);
+            }
         }
-        setListener();
     }
 
     private void setListener() {
@@ -67,7 +75,7 @@ public class LaunchActivity extends BaseActivity implements View.OnClickListener
     }
 
     @Override
-     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case 3:
                 if (resultCode == RESULT_OK) {
