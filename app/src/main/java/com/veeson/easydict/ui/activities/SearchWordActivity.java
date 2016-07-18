@@ -199,18 +199,8 @@ public class SearchWordActivity extends BaseActivity implements View.OnClickList
         if (!PreferencesUtils.getBoolean(this, AppConstants.LOGIN_SHANBAY)) {
             tvSentence.setText("登录扇贝网账号获取单词例句");
         }
-        YoudaoWord youdaoWord = (YoudaoWord) getIntent().getSerializableExtra("collection_word_data");
-        if (youdaoWord != null) {
-            youdao = youdaoWord;
-            if (DatabaseManager.getInstance(SearchWordActivity.this).queryCollectionWord(youdaoWord.query)) {
-                ivCollection.setSelected(true);
-            }
-            setUI(youdaoWord);
-            ivSearchWord.setSelected(false);
-        } else {
-            lyWordDetails.setVisibility(View.INVISIBLE);
-            InputMethodUtils.openSoftKeyboard(this, etInputWord);
-        }
+        lyWordDetails.setVisibility(View.INVISIBLE);
+        InputMethodUtils.openSoftKeyboard(this, etInputWord);
         setListener();
     }
 

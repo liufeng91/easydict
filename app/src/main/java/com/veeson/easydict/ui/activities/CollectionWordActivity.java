@@ -13,6 +13,8 @@ import com.veeson.easydict.R;
 import com.veeson.easydict.adapter.CollectionWordAdapter;
 import com.veeson.easydict.adapter.OnItemClickListener;
 import com.veeson.easydict.adapter.expandRecyclerviewadapter.StickyRecyclerHeadersDecoration;
+import com.veeson.easydict.common.capsulation.PlayAudioManager;
+import com.veeson.easydict.common.utils.StringUtils;
 import com.veeson.easydict.db.DatabaseManager;
 import com.veeson.easydict.model.YoudaoWord;
 import com.veeson.easydict.pinyin.CharacterParser;
@@ -36,7 +38,7 @@ public class CollectionWordActivity extends BaseActivity {
     @BindView(R.id.sidebar)
     SideBar sideBar;
 
-    private static final String TAG = "CollectionWordActivity";
+//    private static final String TAG = "CollectionWordActivity";
     private List<YoudaoWord> list;
     private DatabaseManager databaseManager;
     private CollectionWordAdapter adapter;
@@ -82,9 +84,16 @@ public class CollectionWordActivity extends BaseActivity {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Intent intent = new Intent(CollectionWordActivity.this, SearchWordActivity.class);
-                intent.putExtra("collection_word_data", list.get(position));
-                startActivity(intent);
+//                Intent intent = new Intent(CollectionWordActivity.this, SearchWordActivity.class);
+//                intent.putExtra("collection_word_data", list.get(position));
+//                startActivity(intent);
+
+                String word = list.get(position).query;
+                if (StringUtils.isEnglish(word)) {
+                    PlayAudioManager.playENPronVoice(CollectionWordActivity.this, word, "1");
+                } else {
+                    PlayAudioManager.playCNPronVoice(CollectionWordActivity.this, word);
+                }
             }
 
             @Override
