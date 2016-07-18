@@ -28,7 +28,7 @@ android开发初学者，想借此APP提升自己的项目经验，也为了方�
 
 # app下载地址
 
-<a href="http://fir.im/easydict">APK 1.0.2</a>
+<a href="http://fir.im/easydict">APK 1.1.0</a>
 
 # 截图
 
