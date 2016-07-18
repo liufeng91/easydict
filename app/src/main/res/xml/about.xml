@@ -16,7 +16,7 @@
             android:title="数据来源" />
         <Preference
             android:key="open libs"
-            android:summary="retrofit2、gson、butterknife、material-dialogs"
+            android:summary="retrofit2、glide、gson、butterknife、material-dialogs"
             android:title="软件使用的开源库" />
         <Preference
             android:key="about_author"

@@ -1,11 +1,14 @@
 package com.veeson.easydict.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.veeson.easydict.R;
@@ -20,10 +23,14 @@ import butterknife.ButterKnife;
  * Created by Wilson on 2016/6/22.
  */
 public class TranslationRecordAdapter extends RecyclerView.Adapter<TranslationRecordAdapter.ViewHolder> {
-    List<TranslationRecord> list;
+    private Context context;
+    private List<TranslationRecord> list;
     private OnItemClickListener mOnItemClickListener;
+    // Allows to remember the last item shown on screen
+    private int lastPosition = -1;
 
-    public TranslationRecordAdapter(List<TranslationRecord> list) {
+    public TranslationRecordAdapter(Context context, List<TranslationRecord> list) {
+        this.context = context;
         this.list = list;
     }
 
@@ -58,6 +65,21 @@ public class TranslationRecordAdapter extends RecyclerView.Adapter<TranslationRe
                 return false;
             }
         });
+        setAnimation(holder.cardView, position);
+    }
+
+    /**
+     * Here is the key method to apply the animation
+     */
+    private void setAnimation(View viewToAnimate, int position)
+    {
+        // If the bound view wasn't previously displayed on screen, it's animated
+        if (position > lastPosition)
+        {
+            Animation animation = AnimationUtils.loadAnimation(context, R.anim.zoom_in);
+            viewToAnimate.startAnimation(animation);
+            lastPosition = position;
+        }
     }
 
     @Override

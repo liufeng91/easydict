@@ -6,9 +6,9 @@
     android:layout_height="wrap_content"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardBackgroundColor="@color/bg_white"
-    app:cardCornerRadius="3dp"
-    app:cardElevation="3dp"
-    app:cardMaxElevation="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="6dp"
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
 

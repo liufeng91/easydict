@@ -9,17 +9,15 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="@dimen/dp10"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="3dp"
-        app:cardElevation="3dp"
+        app:cardElevation="2dp"
         app:cardMaxElevation="8dp"
         app:cardPreventCornerOverlap="true"
-        app:cardBackgroundColor="@color/bg_white"
         app:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:id="@+id/search_word_button"
             android:layout_width="match_parent"
             android:layout_height="40dp">
 
@@ -59,20 +57,22 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp10">
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="每日一句："
-                android:textSize="@dimen/sp20"
                 android:textColor="@color/text"
+                android:textSize="@dimen/sp20"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/daily_voice"
+                style="@style/DefaultClickable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/dp10"

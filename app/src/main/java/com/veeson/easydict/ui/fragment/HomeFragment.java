@@ -4,6 +4,7 @@ package com.veeson.easydict.ui.fragment;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,8 +45,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     TextView dailyCn;
     @BindView(R.id.daily_voice)
     ImageView dailyVoice;
-    @BindView(R.id.search_word_button)
-    RelativeLayout searchWordButton;
+    @BindView(R.id.card_view)
+    CardView searchWordButton;
 
     private ACache mCache;
     private static final String TAG = "HomeFragment";
@@ -135,7 +136,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     e.printStackTrace();
                 }
                 break;
-            case R.id.search_word_button:
+            case R.id.card_view:
                 Intent intent = new Intent(getActivity(), SearchWordActivity.class);
 //                startActivityForResult(intent, 1);
 //                如果直接调用startActivityForResult()，那么回调的就是fragment里面的onActivityResult()方法。

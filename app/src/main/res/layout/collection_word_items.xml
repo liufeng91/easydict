@@ -33,6 +33,7 @@
         android:id="@+id/tv_collection_word_paraphrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp12"
         android:lineSpacingMultiplier="1.2"
         android:text="n. 好处；善行；慷慨的行为；adj. 好的；优良的；愉快的；虔诚的；adv. 好；n. (Good)人名；(英)古德；(瑞典)戈德"
         android:textColor="@color/text" />

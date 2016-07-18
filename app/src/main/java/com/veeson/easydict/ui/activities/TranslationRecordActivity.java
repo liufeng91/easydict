@@ -50,7 +50,7 @@ public class TranslationRecordActivity extends BaseActivity {
     private void initRecyclerView() {
         rvTransRecord.setHasFixedSize(true);
         rvTransRecord.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new TranslationRecordAdapter(list);
+        adapter = new TranslationRecordAdapter(this, list);
         rvTransRecord.setAdapter(adapter);
 //        rvTransRecord.setItemAnimator(new DefaultItemAnimator());
 
