@@ -33,26 +33,26 @@ android开发初学者，想借此APP提升自己的项目经验，也为了方�
 # 截图
 
 <p>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-49-35_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-45-52_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-11-09-52_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-46-01_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-25-27_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-25-34_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-25-45_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-25-48_com.veeson.easydic.png" width="213" height="350"/>
 </p>
 
 <br />
 
 <p>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-46-41_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-45-58_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-11-06-25_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-46-52_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-26-01_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-26-29_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-26-34_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-26-42_com.veeson.easydic.png" width="213" height="350"/>
 </p>
 
 <br />
 
 <p>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-48-53_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-10-49-00_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-11-05-47_com.veeson.easydic.png" width="213" height="350"/>
-  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-14-11-09-03_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-27-03_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-27-08_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-27-12_com.veeson.easydic.png" width="213" height="350"/>
+  <img src="https://github.com/Veeson/easydict/blob/master/screenshot/Screenshot_2016-07-18-22-27-19_com.veeson.easydic.png" width="213" height="350"/>
 </p>
